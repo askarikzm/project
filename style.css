@@ -1,0 +1,93 @@
+
+body{
+    background-color: #102342    ;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    max-width:1400px;
+    margin: auto;
+}
+
+
+button{
+  cursor: pointer;
+}
+.white{
+    filter: drop-shadow(-10px 10px 10px #E93565);
+}
+
+::-webkit-scrollbar {
+    width: 11px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #E93565;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #E93565;
+  }
+  
+
+
+  .up_dow {
+    animation: updown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+  
+  @keyframes updown {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+
+  .dow_up {
+    animation: dow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+  
+  @keyframes dow {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(40px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+
+  .up_dow2 {
+    animation: updown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+  
+  @keyframes updown {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }

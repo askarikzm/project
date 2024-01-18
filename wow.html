@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            margin: auto;
+            background-color: #372048;
+        }
+
+        .title {
+            font-size: 70px;
+            font-weight: bold;
+            color: #da3162;
+            padding: 1.5% 0;
+        }
+
+        .title-info {
+            padding-bottom: 2%;
+            font-size: 40px;
+            font-weight: normal;
+            color: #da3162;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            padding: 2%;
+        }
+
+        .input-group,
+        .textarea-group {
+            padding: 0.8% 0;
+        }
+
+        input,
+        textarea {
+            color: white;
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #757575;
+            padding: 1%;
+            margin-top: 0%;
+            font-size: 50px;
+        }
+
+        input:focus,
+        textarea:focus {
+            background-color: transparent;
+            outline: transparent;
+            border-bottom: 2px solid #69f0ae;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: transparent;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px; /* Set the placeholder font size to 25px */
+        }
+
+        label {
+            color: #da3162;
+            position: relative;
+            left: 0.5em;
+            top: -2em;
+            cursor: auto;
+            transition: 0.3s ease all;
+        }
+
+        input:focus ~ label,
+        input:not(:placeholder-shown) ~ label {
+            top: 4%;
+            color: #da3162;
+            font-size: 20px;
+        }
+
+        textarea:focus ~ label,
+        textarea:not(:placeholder-shown) ~ label {
+            top: 4%;
+            color: #da3162;
+            font-size: 20px;
+        }
+
+        .button-div {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            padding: 2%;
+            width: 40%;
+            border: 1px solid;
+            border-color: white;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 18px;
+            background-color: #da3162;
+            color: white;
+            font-size: 30px;
+            box-shadow: 0 0 10px #212121;
+            margin-bottom: 10px;
+        }
+
+        button:hover {
+            background: #000;
+            color: #da3162;
+            cursor: pointer;
+        }
+        ::-webkit-scrollbar {
+    width: 11px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #E93565;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #E93565;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 14px;
+    background-color: inherit;
+    box-shadow: #e93565;
+    border-bottom: 1px solid #e93565;
+}
+
+/* Center the nav-links */
+header .nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+header .nav-links a {
+    text-decoration: none;
+    color: white;
+}
+   
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+            <img src="/Images/Logo.svg" alt="logo">
+        </a>
+        </div>
+
+       
+
+
+    </header>
+    
+    <div class="title">Contact us</div>
+    <div class="title-info">We'll get back to you soon!</div>
+
+    <form action="javascript:submitForm()" method="POST">
+        <div class="input-group">
+            <input type="text" name="first_name" id="first-name" placeholder="First name">
+            <label for="first-name">First name</label>
+        </div>
+
+        <div class="input-group">
+            <input type="text" name="last_name" id="last-name" placeholder="Last Name">
+            <label for="last-name">Last name</label>
+        </div>
+
+        <div class="input-group">
+            <input type="email" name="e-mail" id="e-mail" placeholder="e-mail">
+            <label for="e-mail">e-mail</label>
+        </div>
+
+        <div class="textarea-group">
+            <textarea name="message" id="message" rows="1" placeholder="Message"></textarea>
+            <label for="message">Message</label>
+        </div>
+
+        <div class="button-div">
+            <button class="formbold-btn" type="submit">SEND</button>
+        </div>
+    </form>
+</body>
+<script>
+function submitForm() {
+    alert("QUERY WILL BE RESOLVED SOON");
+}
+</script>
+</html>
